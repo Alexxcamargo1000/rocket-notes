@@ -1,14 +1,22 @@
 import { Button } from '../../components/Button'
 import { Header } from '../../components/Header'
-import { Container } from './styles'
+import { Section } from '../../components/Section'
+import { Container, Links } from './styles'
  export function Details() {
   return (
     <Container>
       <Header/>
-      <div>
-        <h1>Hello world</h1>
+   
+        <Section title="Links uteis">
+          <Links>
+            <li><a href="">link1</a></li>
+            <li><a href="">link2</a></li>
+          </Links>
+        </Section>
+        <Section title="Marcadores">
+          
+        </Section>
         <Button title="voltar"/>
-      </div>
     </Container>
   )
 }
