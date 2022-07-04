@@ -1,12 +1,14 @@
 import { Button } from '../../components/Button'
+import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
+import { Tag } from '../../components/Tag'
 import { Container, Links } from './styles'
  export function Details() {
   return (
     <Container>
       <Header/>
-   
+        <ButtonText title="Excluir Nota"/>
         <Section title="Links uteis">
           <Links>
             <li><a href="">link1</a></li>
@@ -14,8 +16,8 @@ import { Container, Links } from './styles'
           </Links>
         </Section>
         <Section title="Marcadores">
-          
-        </Section>
+          <Tag title="React"/>
+        </Section>  
         <Button title="voltar"/>
     </Container>
   )
