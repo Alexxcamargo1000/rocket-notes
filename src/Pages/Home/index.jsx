@@ -29,7 +29,8 @@ export function Home() {
             title: 'Rocketnotes', 
             tags:[
               {id: 1, name: 'react'},
-              {id: 2, name: 'node'}
+              {id: 2, name: 'node'},
+              {id: 3, name: 'express'}
             ]
             }}/>
         </Section>
