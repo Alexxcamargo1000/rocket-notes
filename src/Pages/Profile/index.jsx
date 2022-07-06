@@ -2,6 +2,7 @@ import { FiArrowLeft, FiUser, FiLock, FiMail, FiCamera} from "react-icons/fi";
 
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { Link } from "react-router-dom";
 
 import { Container, Form, Avatar } from "./styles";
 
@@ -11,9 +12,9 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <a href="/">
+        <Link to="/">
           <FiArrowLeft size={24}/>
-        </a>
+        </Link>
       </header>
 
       <Form>

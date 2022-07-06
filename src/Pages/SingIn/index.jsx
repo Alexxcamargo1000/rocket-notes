@@ -1,8 +1,9 @@
 import { Background, Container, Form } from "./styles";
-import {FiLogIn, FiLock, FiMail} from "react-icons/fi";
+import { FiLock, FiMail} from "react-icons/fi";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { Link } from "react-router-dom";
 
 export function SingIn() {
   return (
@@ -27,7 +28,7 @@ export function SingIn() {
 
         <Button title="Entrar"/>
 
-        <a href="#">Criar Login</a>
+        <Link to="/register">Criar Login</Link>
 
       </Form>
 
