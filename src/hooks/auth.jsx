@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { api } from "../services/api";
+
 const AuthContext = createContext({});
 
 function AuthProvider({ children }) {
@@ -26,9 +27,12 @@ function AuthProvider({ children }) {
   }
 
   function signOut() {
+
+
     localStorage.removeItem("@rocketNotes:token");
     localStorage.removeItem("@rocketNotes:user");
     setData({});
+
   }
 
   async function updateProfile({ user, avatarFile }) {
