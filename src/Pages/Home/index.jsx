@@ -17,9 +17,8 @@ export function Home() {
   const navigate = useNavigate();
 
   function handleTagSelected(tagName) {
-
-    if(tagName === 'all' ) {
-      return setTagsSelected([])
+    if (tagName === "all") {
+      return setTagsSelected([]);
     }
     const alreadySelected = tagsSelected.includes(tagName);
 
@@ -32,9 +31,8 @@ export function Home() {
   }
 
   function handleDetails(id) {
-    navigate(`/details/${id}`)
+    navigate(`/details/${id}`);
   }
-
 
   useEffect(() => {
     async function fetchTags() {
@@ -103,7 +101,7 @@ export function Home() {
 
       <NewNote to="/new">
         <FiPlus />
-        Criar Nota
+        <span>Criar Nota</span>
       </NewNote>
     </Container>
   );
