@@ -12,6 +12,9 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
+  @media (max-width: 768px) {
+    padding: 0 16px;
+    }
 `
 
 export const Profile = styled(Link)`
@@ -30,6 +33,7 @@ export const Profile = styled(Link)`
     flex-direction: column;
     justify-content: center;
     line-height: 24px;
+
 
     span {
       font-size: 14px;
