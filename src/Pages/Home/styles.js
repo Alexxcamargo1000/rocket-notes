@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 150px auto;
-    grid-template-rows: 105px 100px auto auto;
+    grid-template-rows: 105px 100px 125px auto;
     grid-template-areas:
       "header header"
       "menu menu"
@@ -74,7 +74,7 @@ export const Search = styled.div`
   padding: 64px 64px 0;
 
   @media (max-width: 768px) {
-    padding: 40px 10px 0px;
+    padding: 60px 10px 0px;
   }
 `;
 
@@ -102,12 +102,17 @@ export const NewNote = styled(Link)`
     bottom: 20px;
     right: 20px;
 
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 
     & span {
       display: none;
+    }
+
+    & svg {
+      width: 24px;
+      height: 24px;
     }
   }
 `;

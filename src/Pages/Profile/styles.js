@@ -14,6 +14,10 @@ export const Container = styled.div`
     align-items: center;
     padding: 0 124px;
 
+    @media (max-width: 768px) {
+    padding: 0 20px;
+    }
+
     svg {
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
