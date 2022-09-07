@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -6,45 +6,57 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 105px auto;
   grid-template-areas:
-  "header"
-  "content";
+    "header"
+    "content";
 
   > main {
     grid-area: content;
     overflow-y: scroll;
     padding: 64px 0;
+
+    @media (max-width: 768px) {
+      padding: 16px;
+      margin: 0 auto;
+    }
   }
-`
+`;
 export const Links = styled.ul`
   list-style: none;
   > li {
     margin-top: 12px;
   }
   a {
-    color: ${({ theme }) => theme.COLORS.WHITE}
+    color: ${({ theme }) => theme.COLORS.WHITE};
   }
-`
+`;
 
 export const Content = styled.div`
-  max-width: 550px ;
+  max-width: 550px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
 
   > button:first-child {
-    align-self:end ;
+    align-self: end;
+    @media (max-width: 768px) {
+      margin-top: 14px;
+    }
   }
 
   > h1 {
     font-size: 36px;
-    font-weight:400;
-    padding-top: 64px ;
+    font-weight: 400;
+    padding-top: 64px;
+    text-transform: capitalize;
   }
 
   > p {
     font-size: 16px;
     margin-top: 16px;
     text-align: justify;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
-`
+`;
